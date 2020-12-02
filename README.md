@@ -55,12 +55,12 @@ The original VBA code included two loops:
 
 When this code was executed against the 2017 stock market dataset, it ran in 0.578 seconds.
    
-![](Resources/Module_2_2017.png)
+[Module_2_2017](https://github.com/acfthomson/stock-analysis/blob/main/Resources/Module_2_2017.PNG)
    
    
 When this code was executed against the 2018 stock market dataset, it ran in 0.585 seconds.
    
-![](Resources/Module_2_2018.png)
+[Module_2_2018](https://github.com/acfthomson/stock-analysis/blob/main/Resources/Module_2_2018.PNG)
    
    
 - The refactored VBA code was consolidated into one loop:
@@ -115,12 +115,12 @@ When this code was executed against the 2018 stock market dataset, it ran in 0.5
 	
 When the refactored code was executed against the 2017 stock market data set, it ran in 0.128 seconds, which is 4.5 times faster than the original code.
    
-![](Resources/VBA_Challenge_2017.png)
+[VBA_Challenge_2017](https://github.com/acfthomson/stock-analysis/blob/main/Resources/VBA_Challenge_2017.PNG)
    
    
 When the refactored code was executed against the 2018 stock market dataset, it ran in 0.101 seconds.  This is nearly 6 times faster than the original code.
    
-![](Resources/VBA_Challenge_2018.png)
+[VBA_Challenge_2018](https://github.com/acfthomson/stock-analysis/blob/main/Resources/VBA_Challenge_2018.PNG)
 
 
 ## Summary

@@ -11,7 +11,7 @@ The dataset can be found here: [VBA_Challenge](https://github.com/acfthomson/sto
 ## Analysis
 The original VBA code included two loops:
  
-'''
+```
    '4. Loop through all tickers (AKA 'ticker loop')
 
 For i = 0 To 11
@@ -64,7 +64,7 @@ Cells(4 + i, 2).Value = totalVolume
 Cells(4 + i, 3).Value = endingPrice / startingPrice - 1
     
 Next i
-'''
+```
 
 
 When this code was executed against the 2017 stock market dataset, it ran in 0.578 seconds.
@@ -77,9 +77,9 @@ When this code was executed against the 2018 stock market dataset, it ran in 0.5
 ![Module_2_2018](https://github.com/acfthomson/stock-analysis/blob/main/Resources/Module_2_2018.PNG)
    
    
-- The refactored VBA code was consolidated into one loop:
+The refactored VBA code was consolidated into one loop:
 
-'''
+```
 	For i = 2 To RowCount
     
     
@@ -126,7 +126,7 @@ When this code was executed against the 2018 stock market dataset, it ran in 0.5
         Cells(4 + i, 3).Value = tickerEndingPrices(i) / tickerStartingPrices(i) - 1
         
     Next i
-'''
+```
 	
 	
 When the refactored code was executed against the 2017 stock market data set, it ran in 0.128 seconds, which is 4.5 times faster than the original code.

@@ -5,13 +5,15 @@ A client wanted to analyze the stock market over the last few years.  This proje
 ## Overview of Project
 Using a stock market dataset spanning two years, VBA code was written to calculate total daily volume and rate of return for a year.  The stock market data was contained in an Excel spreadsheet, and a VBA script was written.  The VBA code was refactored in order to make it more efficient to use against larger datasets.
 
+The dataset can be found here: [VBA_Challenge](https://github.com/acfthomson/stock-analysis/blob/main/VBA_Challenge.xlsm)
+
 
 ## Analysis
 The original VBA code included two loops:
  
-> '4. Loop through all tickers (AKA 'ticker loop')
+   '4. Loop through all tickers (AKA 'ticker loop')
 
->For i = 0 To 11
+	For i = 0 To 11
         
     ticker = tickers(i)
     totalVolume = 0
@@ -50,7 +52,6 @@ The original VBA code included two loops:
             End If
         
         Next j
-
 
 When this code was executed against the 2017 stock market dataset, it ran in 0.578 seconds.
    

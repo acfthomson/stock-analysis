@@ -1,4 +1,4 @@
-# Stock analysis with Excel
+# Stock Analysis with Excel
 A client wanted to analyze the stock market over the last few years.  This project required refactoring VBA code to loop through data once in order to collect the same information.    
 
 
@@ -9,9 +9,9 @@ Using a stock market dataset spanning two years, VBA code was written to calcula
 ## Analysis
 The original VBA code included two loops:
  
- '4. Loop through all tickers (AKA 'ticker loop')
+> '4. Loop through all tickers (AKA 'ticker loop')
 
-For i = 0 To 11
+>For i = 0 To 11
         
     ticker = tickers(i)
     totalVolume = 0
@@ -52,14 +52,14 @@ For i = 0 To 11
         Next j
 
 
-   * When this code was executed against the 2017 stock market dataset, it ran in 0.578 seconds.
+When this code was executed against the 2017 stock market dataset, it ran in 0.578 seconds.
    
-   ![](Resources/Module_2_2017.png)
+![](Resources/Module_2_2017.png)
    
    
-   * When this code was executed against the 2018 stock market dataset, it ran in 0.585 seconds.
+When this code was executed against the 2018 stock market dataset, it ran in 0.585 seconds.
    
-   ![](Resources/Module_2_2018.png)
+![](Resources/Module_2_2018.png)
    
    
 - The refactored VBA code was consolidated into one loop:
@@ -112,30 +112,30 @@ For i = 0 To 11
     Next i
 	
 	
-   * When the refactored code was executed against the 2017 stock market data set, it ran in 0.128 seconds, which is 4.5 times faster than the original code.
+When the refactored code was executed against the 2017 stock market data set, it ran in 0.128 seconds, which is 4.5 times faster than the original code.
    
-   ![](Resources/VBA_Challenge_2017.png)
+![](Resources/VBA_Challenge_2017.png)
    
    
-   * When the refactored code was executed against the 2018 stock market dataset, it ran in 0.101 seconds.  This is nearly 6 times faster than the original code.
+When the refactored code was executed against the 2018 stock market dataset, it ran in 0.101 seconds.  This is nearly 6 times faster than the original code.
    
-   ![](Resources/VBA_Challenge_2018.png)
+![](Resources/VBA_Challenge_2018.png)
 
 
 ## Summary
-- What are the advantages of refactoring code?
+What are the advantages of refactoring code?
    * Increases speed of program
    * Makes the code easier to understand
    * Helps find bugs
    
    
-- What are the disadvantages of refactoring code?
+What are the disadvantages of refactoring code?
    * The developer must understand what the code is doing in order to improve upon it
    * Refactoring code could produce bugs
    * It could be risky in terms of time and money - "if it ain't broke, don't fix it"
 
 
-- How do these pros and cons apply to refactoring the original VBA script?
+How do these pros and cons apply to refactoring the original VBA script?
    * The refactored VBA code increased in execution speed
    * The initial code was easy to understand because I wrote it
    * The initial VBA code seemed stable, so in terms of spending time and money to refactor it, it may not be worthwhile

@@ -7,7 +7,7 @@ Using a stock market dataset spanning two years, VBA code was written to calcula
 
 
 ## Analysis
-- The original VBA code included two loops:
+The original VBA code included two loops:
  
  '4. Loop through all tickers (AKA 'ticker loop')
 
@@ -50,6 +50,7 @@ For i = 0 To 11
             End If
         
         Next j
+
 
    * When this code was executed against the 2017 stock market dataset, it ran in 0.578 seconds.
    
